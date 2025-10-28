@@ -1,20 +1,86 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# mlb-live-score
 
-# Run and deploy your AI Studio app
+MLBのスコアをリアルタイムで表示するシンプルなウェブアプリケーションです。  
+A simple web app that displays MLB live scores in real time.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/1oEOtDObddG3oAlrIuQWi0hH93C9hkD33
+## 主な特徴 / Features
 
-## Run Locally
+- リアルタイムでMLBの試合スコアを表示 / Shows live MLB scores in real time
+- 複数試合の一覧表示 / Lists multiple games
+- 自動更新（ポーリング／WebSocketに対応可能） / Auto-updates (polling or WebSocket)
+- TypeScript で実装 / Built with TypeScript
+- レスポンシブ UI / Responsive UI for mobile and desktop
 
-**Prerequisites:**  Node.js
+---
 
+## クイックスタート / Quick Start
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 日本語
+
+1. 依存関係をインストール  
+   ```
+   npm install
+   ```
+2. .env.local に GEMINI_API_KEY を設定  
+   プロジェクトルートの `.env.local` に Gemini の API キーを `GEMINI_API_KEY` として設定してください。
+3. アプリを起動  
+   ```
+   npm run dev
+   ```
+
+### English
+
+1. Install dependencies  
+   ```
+   npm install
+   ```
+2. Set the GEMINI_API_KEY in .env.local to your Gemini API key  
+   Create a `.env.local` file in the project root and add:
+   ```
+   GEMINI_API_KEY=your_gemini_api_key_here
+   ```
+3. Run the app  
+   ```
+   npm run dev
+   ```
+
+---
+
+## 要求環境 / Requirements
+
+- Node.js >= 16
+- npm または yarn
+
+---
+
+## ローカル開発 / Development
+
+開発サーバーを起動してホットリロードで確認できます（package.json のスクリプトに依存）。
+
+```
+npm run dev
+# または
+yarn dev
+```
+
+ブラウザで http://localhost:3000（またはコンソールに表示される URL）を開いて動作を確認してください。
+
+---
+
+## ビルドとデプロイ / Build & Deploy
+
+```
+npm run build
+# または
+yarn build
+```
+
+ビルド成果物を静的ホスティングサービス（Vercel、Netlify、GitHub Pages など）や任意のサーバーにデプロイしてください。
+
+--
+
+## ライセンス / License
+
+MIT
