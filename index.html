@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live MLB Today</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+    <style>
+      @keyframes flash-yellow {
+        50% { background-color: #fde047; box-shadow: 0 0 12px #fde047; } /* yellow-300 */
+      }
+      @keyframes flash-green {
+        50% { background-color: #86efac; box-shadow: 0 0 12px #86efac; } /* green-300 */
+      }
+      @keyframes flash-red {
+          50% { background-color: #fca5a5; box-shadow: 0 0 12px #fca5a5; } /* red-300 */
+      }
+      .animate-flash-yellow {
+        animation: flash-yellow 1s 10;
+      }
+      .animate-flash-green {
+        animation: flash-green 1s 10;
+      }
+      .animate-flash-red {
+          animation: flash-red 1s 10;
+      }
+    </style>
+</head>
+  <body class="bg-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

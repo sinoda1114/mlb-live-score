@@ -1,0 +1,5 @@
+{
+  "name": "Live MLB Today",
+  "description": "A React application to display live scores for today's Major League Baseball games, with data refreshed automatically. The UI is presented in Japanese.",
+  "requestFramePermissions": []
+}
