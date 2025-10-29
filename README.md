@@ -8,6 +8,25 @@ A simple web app that displays MLB live scores in real time.
 
 ---
 
+## 技術スタック
+
+- **言語:** TypeScript
+- **フレームワーク/ライブラリ:** React
+- **ビルドツール:** Vite
+- **UI:** Tailwind CSS（クラスベースで使用）
+- **API通信:** fetch（MLB公式APIへのリクエスト）
+- **型管理:** TypeScript型定義ファイル（`lib/types.ts`）
+- **状態管理:** React標準のuseState, useEffect, useRef, useCallback、カスタムフック
+- **ディレクトリ構成:**
+  - `components/` ... Reactコンポーネント群（例: ScoreBoard, StatusBadge, GameSelect, ErrorBanner）
+  - `hooks/` ... カスタムフック（例: useTodayGamesJST, useLiveGame）
+  - `lib/` ... ユーティリティ・型ファイル
+  - `services/` ... API通信ロジック
+- **実行環境:** Node.js（>=16）
+- **デプロイ:** 静的ホスティング（Vercelなどを想定）
+
+---
+
 ## 主な特徴 / Features
 
 - リアルタイムでMLBの試合スコアを表示 / Shows live MLB scores in real time
