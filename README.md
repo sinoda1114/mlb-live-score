@@ -91,17 +91,24 @@ yarn dev
 
 ---
 
-## ビルドとデプロイ / Build & Deploy
+## ディレクトリツリー
 
 ```
-npm run build
-# または
-yarn build
+components/
+  ├─ ScoreBoard.tsx
+  ├─ StatusBadge.tsx
+  ├─ GameSelect.tsx
+  └─ ErrorBanner.tsx
+hooks/
+  ├─ useTodayGamesJST.ts
+  └─ useLiveGame.ts
+lib/
+  ├─ utils.ts
+  └─ types.ts
+services/
+  └─ api.ts
 ```
 
-ビルド成果物を静的ホスティングサービス（Vercel、Netlify、GitHub Pages など）や任意のサーバーにデプロイしてください。
-
---
 
 ## ライセンス / License
 
