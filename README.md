@@ -1,3 +1,6 @@
+<img width="860" height="838" alt="image" src="https://github.com/user-attachments/assets/fc2e2501-17e9-448c-8e84-6a5795abc6e0" />
+
+
 # mlb-live-score
 
 MLBのスコアをリアルタイムで表示するシンプルなウェブアプリケーションです。  
